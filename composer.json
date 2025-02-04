@@ -1,0 +1,32 @@
+{
+    "name": "redot/serializer",
+    "description": "PHP library for serializing and deserializing data",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdelrhman Said",
+            "email": "abdelrhmansaidzaki@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Redot\\Serializer\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.10"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "vendor/bin/pint"
+    }
+}
