@@ -12,13 +12,12 @@
     "autoload": {
         "psr-4": {
             "Redot\\Serializer\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+        }
     },
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "anourvalar/eloquent-serialize": "^1.2",
+        "opis/closure": "^4.3"
     },
     "require-dev": {
         "laravel/pint": "^1.10"
