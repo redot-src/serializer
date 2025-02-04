@@ -29,11 +29,7 @@ class Serializer
      */
     public static function unserialize(string $data): mixed
     {
-        if (str_starts_with($data, 'O:')) {
-            return \Opis\Closure\unserialize($data);
-        }
-
-        $data = unserialize($data);
+        $data = \Opis\Closure\unserialize($data);
 
         if ($data instanceof \AnourValar\EloquentSerialize\Package) {
             return \AnourValar\EloquentSerialize\Facades\EloquentSerializeFacade::unserialize($data);
